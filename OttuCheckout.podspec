@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   'OttuCheckout is an awesome pod aimed to make your life easier aroud Apple Pay'
                        DESC
 
-  s.homepage         = 'https://github.com/Yanenko Petr/OttuCheckout'
+  s.homepage         = 'https://gitlab.com/yanenkopetr1481/ottucheckout'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Yanenko Petr' => 'yanenkopetr1841@gmail.com' }
   s.source           = { :git => 'https://gitlab.com/yanenkopetr1481/ottucheckout.git', :tag => s.version.to_s }
