@@ -74,9 +74,9 @@ First, head to the  [Apple Pay](https://dashboard.stripe.com/account/payments/ap
 
 Next, back on the Apple Developer site, visit the  [Add iOS Certificate](https://developer.apple.com/documentation/passkit/apple_pay/setting_up_apple_pay_requirements)  page. Choose  **Apple Pay Certificate**  from the options and click  **Continue**. On the next page, choose the Merchant ID you created earlier from the dropdown and continue.
 
-The next page explains that you can obtain a CSR from your Payment Provider (which at this point you’ve done already) or create one manually.  **Important note:**  you  **must**  use the CSR provided by Stripe - creating your own won’t work. So ignore the directions at the bottom of this page and continue on.
+The next page explains that you can obtain a CSR from your Payment Provider (which at this point you’ve done already) or create one manually.  
 
-You’ll be prompted to upload a  `.certSigningRequest`  file. Choose the file you downloaded from the Dashboard and continue. You’ll see a success page, with an option to download your certificate. Download it. Finally, return to the Dashboard and upload this  `.cer`  file to Stripe.
+You’ll be prompted to upload a  `.certSigningRequest`  file. Choose the file you downloaded from the Dashboard and continue. You’ll see a success page, now you can work with Apple Pay in your project.
 #### Integrate with Xcode
 Add the **Apple Pay** capability to your app. In Xcode, open your project settings, choose the **Capabilities** tab, and enable the **Apple Pay** switch. You may be prompted to log in to your developer account at this point. Enable the checkbox next to the merchant ID you created earlier, and your app is ready to accept Apple Pay.
  ![Enable the Apple pay capability in Xcode](https://storage.stfalcon.com/uploads/images/5c45cffa7e8f6.png)
