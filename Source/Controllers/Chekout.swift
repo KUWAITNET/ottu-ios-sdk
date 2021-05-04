@@ -13,7 +13,7 @@ public protocol CheckoutDelegate {
     func paymentDissmised()
 }
 
-@available(iOS 11.0, *)
+@available(iOS 12.0, *)
 @objcMembers public class Checkout:NSObject {
     
     private var parrentVC: UIViewController
@@ -68,7 +68,7 @@ public protocol CheckoutDelegate {
     }
 }
 
-@available(iOS 11.0, *)
+@available(iOS 12.0, *)
 extension Checkout:TapApplePayButtonDataSource,TapApplePayButtonDelegate {
     
     func showAlert(title:String, data:String, isCopy:Bool = true) {

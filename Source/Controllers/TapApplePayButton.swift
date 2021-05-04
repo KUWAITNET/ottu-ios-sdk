@@ -31,7 +31,7 @@ import PassKit
     func tapApplePayDissmised()
 }
 /// Class represents the UIView that has Apple pay button wrapped inside Tap Kit
-@available(iOS 11.0, *)
+@available(iOS 12.0, *)
 @objcMembers public class TapApplePayButton: UIView {
     
     /// Click handler block, if this is set, then the caller determines that he will handle the click on the Apple Pay button himself.
