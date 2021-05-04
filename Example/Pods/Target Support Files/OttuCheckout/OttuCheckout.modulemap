@@ -1,0 +1,6 @@
+framework module OttuCheckout {
+  umbrella header "OttuCheckout-umbrella.h"
+
+  export *
+  module * { export * }
+}

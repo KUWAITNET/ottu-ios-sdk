@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'OttuCheckout'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of OttuCheckout.'
+  s.summary          = 'OttuCheckout it`s a simple apple pay integration SDK'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  'OttuCheckout is an awesome pod aimed to make your life easier aroud Apple Pay'
                        DESC
 
   s.homepage         = 'https://github.com/Yanenko Petr/OttuCheckout'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Yanenko Petr' => 'yanenkopetr1841@gmail.com' }
-  s.source           = { :git => 'https://github.com/Yanenko Petr/OttuCheckout.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://gitlab.com/yanenkopetr1481/ottucheckout.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '13.0'
+  s.swift_version = '5.0'
+  s.platforms = {
+      "ios": "13.0"
+  }
 
-  s.source_files = 'OttuCheckout/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'OttuCheckout' => ['OttuCheckout/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'Source/**/*.swift'
 end

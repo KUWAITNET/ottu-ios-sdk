@@ -1,0 +1,6 @@
+framework module Pods_OttuCheckout_Example {
+  umbrella header "Pods-OttuCheckout_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

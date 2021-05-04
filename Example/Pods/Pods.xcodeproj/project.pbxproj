@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E76655A31AE088C37A6E256363C38FE /* Pods-OttuCheckout_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4CA967CDDA4BA263F3E7BE9642F9998 /* Pods-OttuCheckout_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32B34C00D4E7BED67052CC2668A7F046 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		449960803F450F02311E179EC8573A90 /* Pods-OttuCheckout_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D156A7A4C7FA44AB37EA109678E0FD2 /* Pods-OttuCheckout_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8278491FA6972133DF2969F85A6A6AEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BB20C54BE824F45BBF4D536E026E78B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CC2FB28CC6E8598E12496A1C2D7786DB /* Pods-OttuCheckout_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 257395B9EBDA8D5BA168283CD36F5D1F /* Pods-OttuCheckout_Tests-dummy.m */; };
+		D0577500EAAEC602237AA63C8BCBFB66 /* Pods-OttuCheckout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C98940609B12BC10C7F54B77423DDE79 /* Pods-OttuCheckout_Example-dummy.m */; };
+		DD36CE27F568CC92A67DA5ED0A087D49 /* OttuCheckout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BBCA6B4419127F59B0F24BA9A47CC2 /* OttuCheckout-dummy.m */; };
+		DD983B4526413A760008288D /* Chekout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B3526413A750008288D /* Chekout.swift */; };
+		DD983B4626413A760008288D /* TapApplePayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B3626413A750008288D /* TapApplePayButton.swift */; };
+		DD983B4726413A760008288D /* TapApplePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B3726413A750008288D /* TapApplePay.swift */; };
+		DD983B4826413A760008288D /* TapApplePayButtonStyleOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B3926413A750008288D /* TapApplePayButtonStyleOutline.swift */; };
+		DD983B4926413A760008288D /* CurrencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B3A26413A750008288D /* CurrencyCode.swift */; };
+		DD983B4A26413A760008288D /* CountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B3B26413A750008288D /* CountryCode.swift */; };
+		DD983B4B26413A760008288D /* TapApplePayPaymentNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B3C26413A750008288D /* TapApplePayPaymentNetwork.swift */; };
+		DD983B4C26413A760008288D /* TapApplePayStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B3D26413A750008288D /* TapApplePayStatus.swift */; };
+		DD983B4D26413A760008288D /* TapApplePayButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B3E26413A750008288D /* TapApplePayButtonType.swift */; };
+		DD983B4E26413A760008288D /* TapApplePayToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B4026413A750008288D /* TapApplePayToken.swift */; };
+		DD983B4F26413A760008288D /* TapApplePayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B4126413A750008288D /* TapApplePayRequest.swift */; };
+		DD983B5026413A760008288D /* ApplePayConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B4226413A750008288D /* ApplePayConfig.swift */; };
+		DD983B5126413A760008288D /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD983B4426413A760008288D /* UIDeviceExtension.swift */; };
+		EF50324FC1ADD639387EFD4B676F9E2B /* OttuCheckout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB920B77979A22166E2C4C0EE17CC792 /* OttuCheckout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FD117612B95B413716C51E83BEA17BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D879B3D2B86B01020AD88E515D02EB78;
+			remoteInfo = OttuCheckout;
+		};
+		3396EB4134322D3FAF017B1C22327E56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23614CA224B9C51423ADA1AE7AA8F08B;
+			remoteInfo = "Pods-OttuCheckout_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F23416C6FABDB43E2A24E239C86F0A /* OttuCheckout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OttuCheckout.modulemap; sourceTree = "<group>"; };
+		02E3844757EE012C71B8BBCA44FDE735 /* Pods-OttuCheckout_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OttuCheckout_Example-Info.plist"; sourceTree = "<group>"; };
+		032AAFE7A87119D8C521728F3E653E88 /* Pods-OttuCheckout_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OttuCheckout_Tests-Info.plist"; sourceTree = "<group>"; };
+		0F3144C59C9B588F2C4944D541624FA4 /* OttuCheckout.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = OttuCheckout.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		185B74090C91E85F604333AEEB5F4800 /* Pods-OttuCheckout_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OttuCheckout_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		193D4DB6A4915CB70EB9C07AEA9740CD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		257395B9EBDA8D5BA168283CD36F5D1F /* Pods-OttuCheckout_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OttuCheckout_Tests-dummy.m"; sourceTree = "<group>"; };
+		2620B4856B926279BEEB2D16089EF748 /* Pods-OttuCheckout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OttuCheckout_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2660248F9526311FAFBE0D8817CEE2B1 /* Pods-OttuCheckout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OttuCheckout_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3277715CFFD81D42C1FC3705E07DB2F1 /* OttuCheckout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OttuCheckout.debug.xcconfig; sourceTree = "<group>"; };
+		358655B400AEE8D71193BB4EC9609B84 /* Pods-OttuCheckout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OttuCheckout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		36FF441881968B6C4233DF604C07DEB1 /* OttuCheckout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OttuCheckout-prefix.pch"; sourceTree = "<group>"; };
+		3A28B0D9ADB00B8BE97730ABB5C45F3B /* OttuCheckout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OttuCheckout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A35B6FBE7614403E4FA257B7451ACEB /* Pods-OttuCheckout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OttuCheckout_Example.modulemap"; sourceTree = "<group>"; };
+		4308E01C99D45730D295F7BB283C5D0D /* Pods-OttuCheckout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OttuCheckout_Tests.modulemap"; sourceTree = "<group>"; };
+		5AAA88E27B7337993F1C1762F7B42556 /* OttuCheckout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OttuCheckout.release.xcconfig; sourceTree = "<group>"; };
+		6174F9B73E3C535D1AC1B7AF0E786373 /* Pods-OttuCheckout_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OttuCheckout_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D156A7A4C7FA44AB37EA109678E0FD2 /* Pods-OttuCheckout_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OttuCheckout_Tests-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		83318EBB826C10219DCAF9849C0DEE7B /* Pods_OttuCheckout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OttuCheckout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85BBCA6B4419127F59B0F24BA9A47CC2 /* OttuCheckout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OttuCheckout-dummy.m"; sourceTree = "<group>"; };
+		9CA88E1B7DD49EC5807B858305F34CFC /* Pods-OttuCheckout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OttuCheckout_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB920B77979A22166E2C4C0EE17CC792 /* OttuCheckout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OttuCheckout-umbrella.h"; sourceTree = "<group>"; };
+		BDD6F4EB989E79CB5746F547B434D050 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C98940609B12BC10C7F54B77423DDE79 /* Pods-OttuCheckout_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OttuCheckout_Example-dummy.m"; sourceTree = "<group>"; };
+		D4CA967CDDA4BA263F3E7BE9642F9998 /* Pods-OttuCheckout_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OttuCheckout_Example-umbrella.h"; sourceTree = "<group>"; };
+		D5E0D59D04E7EF75E1A540A9F785C78D /* Pods-OttuCheckout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OttuCheckout_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D99042B13507B7DB696A9E7D34D15695 /* Pods_OttuCheckout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OttuCheckout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD983B3526413A750008288D /* Chekout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chekout.swift; sourceTree = "<group>"; };
+		DD983B3626413A750008288D /* TapApplePayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapApplePayButton.swift; sourceTree = "<group>"; };
+		DD983B3726413A750008288D /* TapApplePay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapApplePay.swift; sourceTree = "<group>"; };
+		DD983B3926413A750008288D /* TapApplePayButtonStyleOutline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapApplePayButtonStyleOutline.swift; sourceTree = "<group>"; };
+		DD983B3A26413A750008288D /* CurrencyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCode.swift; sourceTree = "<group>"; };
+		DD983B3B26413A750008288D /* CountryCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCode.swift; sourceTree = "<group>"; };
+		DD983B3C26413A750008288D /* TapApplePayPaymentNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapApplePayPaymentNetwork.swift; sourceTree = "<group>"; };
+		DD983B3D26413A750008288D /* TapApplePayStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapApplePayStatus.swift; sourceTree = "<group>"; };
+		DD983B3E26413A750008288D /* TapApplePayButtonType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapApplePayButtonType.swift; sourceTree = "<group>"; };
+		DD983B4026413A750008288D /* TapApplePayToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapApplePayToken.swift; sourceTree = "<group>"; };
+		DD983B4126413A750008288D /* TapApplePayRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapApplePayRequest.swift; sourceTree = "<group>"; };
+		DD983B4226413A750008288D /* ApplePayConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePayConfig.swift; sourceTree = "<group>"; };
+		DD983B4426413A760008288D /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		F18026EC9C07BE28B6F417163098B8AB /* OttuCheckout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OttuCheckout-Info.plist"; sourceTree = "<group>"; };
+		F874EDD769E240F437B17604B37A578C /* Pods-OttuCheckout_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OttuCheckout_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F9D4AD90F3540CE27C0D7B58921B6824 /* Pods-OttuCheckout_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OttuCheckout_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D0DA1CC3B01101FCEEC9B9A50A87B4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B34C00D4E7BED67052CC2668A7F046 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212AC7F1BD3C23A033B1436EA0CB4332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8278491FA6972133DF2969F85A6A6AEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226ACF4F73BEABE625E8E9CB280E47AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB20C54BE824F45BBF4D536E026E78B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		297AEF7A7A08B56B0618C1697E4C054A /* OttuCheckout */ = {
+			isa = PBXGroup;
+			children = (
+				DD983B3426413A750008288D /* Controllers */,
+				DD983B3826413A750008288D /* Enums */,
+				DD983B4326413A760008288D /* Extension */,
+				DD983B3F26413A750008288D /* Models */,
+				E068779DCF1117D38C0BFB3F9DDE1F51 /* Pod */,
+				7F4915BAF85F41E666E79F1E2F4BD799 /* Support Files */,
+			);
+			name = OttuCheckout;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		380640524BC3D41447DAB18B61F72074 /* Pods-OttuCheckout_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3A35B6FBE7614403E4FA257B7451ACEB /* Pods-OttuCheckout_Example.modulemap */,
+				F874EDD769E240F437B17604B37A578C /* Pods-OttuCheckout_Example-acknowledgements.markdown */,
+				F9D4AD90F3540CE27C0D7B58921B6824 /* Pods-OttuCheckout_Example-acknowledgements.plist */,
+				C98940609B12BC10C7F54B77423DDE79 /* Pods-OttuCheckout_Example-dummy.m */,
+				2660248F9526311FAFBE0D8817CEE2B1 /* Pods-OttuCheckout_Example-frameworks.sh */,
+				02E3844757EE012C71B8BBCA44FDE735 /* Pods-OttuCheckout_Example-Info.plist */,
+				D4CA967CDDA4BA263F3E7BE9642F9998 /* Pods-OttuCheckout_Example-umbrella.h */,
+				2620B4856B926279BEEB2D16089EF748 /* Pods-OttuCheckout_Example.debug.xcconfig */,
+				9CA88E1B7DD49EC5807B858305F34CFC /* Pods-OttuCheckout_Example.release.xcconfig */,
+			);
+			name = "Pods-OttuCheckout_Example";
+			path = "Target Support Files/Pods-OttuCheckout_Example";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		771565068C7B305207E849691DE6951B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				380640524BC3D41447DAB18B61F72074 /* Pods-OttuCheckout_Example */,
+				9877C24A192828C8B3E8E09F42AF7674 /* Pods-OttuCheckout_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7F4915BAF85F41E666E79F1E2F4BD799 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00F23416C6FABDB43E2A24E239C86F0A /* OttuCheckout.modulemap */,
+				85BBCA6B4419127F59B0F24BA9A47CC2 /* OttuCheckout-dummy.m */,
+				F18026EC9C07BE28B6F417163098B8AB /* OttuCheckout-Info.plist */,
+				36FF441881968B6C4233DF604C07DEB1 /* OttuCheckout-prefix.pch */,
+				BB920B77979A22166E2C4C0EE17CC792 /* OttuCheckout-umbrella.h */,
+				3277715CFFD81D42C1FC3705E07DB2F1 /* OttuCheckout.debug.xcconfig */,
+				5AAA88E27B7337993F1C1762F7B42556 /* OttuCheckout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/OttuCheckout";
+			sourceTree = "<group>";
+		};
+		8F168B2843A80982CCA9A4B163C12D3F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				297AEF7A7A08B56B0618C1697E4C054A /* OttuCheckout */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9877C24A192828C8B3E8E09F42AF7674 /* Pods-OttuCheckout_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4308E01C99D45730D295F7BB283C5D0D /* Pods-OttuCheckout_Tests.modulemap */,
+				185B74090C91E85F604333AEEB5F4800 /* Pods-OttuCheckout_Tests-acknowledgements.markdown */,
+				6174F9B73E3C535D1AC1B7AF0E786373 /* Pods-OttuCheckout_Tests-acknowledgements.plist */,
+				257395B9EBDA8D5BA168283CD36F5D1F /* Pods-OttuCheckout_Tests-dummy.m */,
+				032AAFE7A87119D8C521728F3E653E88 /* Pods-OttuCheckout_Tests-Info.plist */,
+				6D156A7A4C7FA44AB37EA109678E0FD2 /* Pods-OttuCheckout_Tests-umbrella.h */,
+				358655B400AEE8D71193BB4EC9609B84 /* Pods-OttuCheckout_Tests.debug.xcconfig */,
+				D5E0D59D04E7EF75E1A540A9F785C78D /* Pods-OttuCheckout_Tests.release.xcconfig */,
+			);
+			name = "Pods-OttuCheckout_Tests";
+			path = "Target Support Files/Pods-OttuCheckout_Tests";
+			sourceTree = "<group>";
+		};
+		BB30336AC91A319AEFB23E5EFD8DF3C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A28B0D9ADB00B8BE97730ABB5C45F3B /* OttuCheckout.framework */,
+				83318EBB826C10219DCAF9849C0DEE7B /* Pods_OttuCheckout_Example.framework */,
+				D99042B13507B7DB696A9E7D34D15695 /* Pods_OttuCheckout_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8F168B2843A80982CCA9A4B163C12D3F /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				BB30336AC91A319AEFB23E5EFD8DF3C0 /* Products */,
+				771565068C7B305207E849691DE6951B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD983B3426413A750008288D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD983B3526413A750008288D /* Chekout.swift */,
+				DD983B3626413A750008288D /* TapApplePayButton.swift */,
+				DD983B3726413A750008288D /* TapApplePay.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD983B3826413A750008288D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				DD983B3926413A750008288D /* TapApplePayButtonStyleOutline.swift */,
+				DD983B3A26413A750008288D /* CurrencyCode.swift */,
+				DD983B3B26413A750008288D /* CountryCode.swift */,
+				DD983B3C26413A750008288D /* TapApplePayPaymentNetwork.swift */,
+				DD983B3D26413A750008288D /* TapApplePayStatus.swift */,
+				DD983B3E26413A750008288D /* TapApplePayButtonType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		DD983B3F26413A750008288D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD983B4026413A750008288D /* TapApplePayToken.swift */,
+				DD983B4126413A750008288D /* TapApplePayRequest.swift */,
+				DD983B4226413A750008288D /* ApplePayConfig.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD983B4326413A760008288D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DD983B4426413A760008288D /* UIDeviceExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E068779DCF1117D38C0BFB3F9DDE1F51 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BDD6F4EB989E79CB5746F547B434D050 /* LICENSE */,
+				0F3144C59C9B588F2C4944D541624FA4 /* OttuCheckout.podspec */,
+				193D4DB6A4915CB70EB9C07AEA9740CD /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		34C727C107083CE8F3AF7FD7011AD1B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF50324FC1ADD639387EFD4B676F9E2B /* OttuCheckout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4125830A9AE0D460EA52B8B78BD730F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E76655A31AE088C37A6E256363C38FE /* Pods-OttuCheckout_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26A06C5561879D37D2B8C77045341F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449960803F450F02311E179EC8573A90 /* Pods-OttuCheckout_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		23614CA224B9C51423ADA1AE7AA8F08B /* Pods-OttuCheckout_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D0704A582EC7193D789F798E7175A06 /* Build configuration list for PBXNativeTarget "Pods-OttuCheckout_Example" */;
+			buildPhases = (
+				4125830A9AE0D460EA52B8B78BD730F5 /* Headers */,
+				A618C8E4A93FAD5198F45A8A30DF5029 /* Sources */,
+				212AC7F1BD3C23A033B1436EA0CB4332 /* Frameworks */,
+				A930A6A2468E8FC659A836CDEC5F7B89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCA6B7E578A28F6B8C54DCC53D0A5B5A /* PBXTargetDependency */,
+			);
+			name = "Pods-OttuCheckout_Example";
+			productName = "Pods-OttuCheckout_Example";
+			productReference = 83318EBB826C10219DCAF9849C0DEE7B /* Pods_OttuCheckout_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D879B3D2B86B01020AD88E515D02EB78 /* OttuCheckout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38BD9E73259CBF3F60B3C31C844164C2 /* Build configuration list for PBXNativeTarget "OttuCheckout" */;
+			buildPhases = (
+				34C727C107083CE8F3AF7FD7011AD1B9 /* Headers */,
+				85E8E53863A9623223DCEB5AB24BFB37 /* Sources */,
+				0D0DA1CC3B01101FCEEC9B9A50A87B4D /* Frameworks */,
+				397EEACA94D70C7AE0F232B1816A3488 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OttuCheckout;
+			productName = OttuCheckout;
+			productReference = 3A28B0D9ADB00B8BE97730ABB5C45F3B /* OttuCheckout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC982A6C7F7593EB44C46DFFA74A1D8A /* Pods-OttuCheckout_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4242E61FF89B7BB068065A04411C6B51 /* Build configuration list for PBXNativeTarget "Pods-OttuCheckout_Tests" */;
+			buildPhases = (
+				A26A06C5561879D37D2B8C77045341F1 /* Headers */,
+				694101D09457D1ED2C3EA1D82B885927 /* Sources */,
+				226ACF4F73BEABE625E8E9CB280E47AE /* Frameworks */,
+				B8BF4D5B3C199D7085F66F5A2187ADDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BAE875EB18EEB55E0C403D1287C2C3F /* PBXTargetDependency */,
+			);
+			name = "Pods-OttuCheckout_Tests";
+			productName = "Pods-OttuCheckout_Tests";
+			productReference = D99042B13507B7DB696A9E7D34D15695 /* Pods_OttuCheckout_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BB30336AC91A319AEFB23E5EFD8DF3C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D879B3D2B86B01020AD88E515D02EB78 /* OttuCheckout */,
+				23614CA224B9C51423ADA1AE7AA8F08B /* Pods-OttuCheckout_Example */,
+				DC982A6C7F7593EB44C46DFFA74A1D8A /* Pods-OttuCheckout_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		397EEACA94D70C7AE0F232B1816A3488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A930A6A2468E8FC659A836CDEC5F7B89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BF4D5B3C199D7085F66F5A2187ADDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		694101D09457D1ED2C3EA1D82B885927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2FB28CC6E8598E12496A1C2D7786DB /* Pods-OttuCheckout_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85E8E53863A9623223DCEB5AB24BFB37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD36CE27F568CC92A67DA5ED0A087D49 /* OttuCheckout-dummy.m in Sources */,
+				DD983B4F26413A760008288D /* TapApplePayRequest.swift in Sources */,
+				DD983B5026413A760008288D /* ApplePayConfig.swift in Sources */,
+				DD983B4A26413A760008288D /* CountryCode.swift in Sources */,
+				DD983B4C26413A760008288D /* TapApplePayStatus.swift in Sources */,
+				DD983B4826413A760008288D /* TapApplePayButtonStyleOutline.swift in Sources */,
+				DD983B4B26413A760008288D /* TapApplePayPaymentNetwork.swift in Sources */,
+				DD983B4726413A760008288D /* TapApplePay.swift in Sources */,
+				DD983B4926413A760008288D /* CurrencyCode.swift in Sources */,
+				DD983B4D26413A760008288D /* TapApplePayButtonType.swift in Sources */,
+				DD983B4626413A760008288D /* TapApplePayButton.swift in Sources */,
+				DD983B5126413A760008288D /* UIDeviceExtension.swift in Sources */,
+				DD983B4526413A760008288D /* Chekout.swift in Sources */,
+				DD983B4E26413A760008288D /* TapApplePayToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A618C8E4A93FAD5198F45A8A30DF5029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0577500EAAEC602237AA63C8BCBFB66 /* Pods-OttuCheckout_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BAE875EB18EEB55E0C403D1287C2C3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-OttuCheckout_Example";
+			target = 23614CA224B9C51423ADA1AE7AA8F08B /* Pods-OttuCheckout_Example */;
+			targetProxy = 3396EB4134322D3FAF017B1C22327E56 /* PBXContainerItemProxy */;
+		};
+		CCA6B7E578A28F6B8C54DCC53D0A5B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OttuCheckout;
+			target = D879B3D2B86B01020AD88E515D02EB78 /* OttuCheckout */;
+			targetProxy = 2FD117612B95B413716C51E83BEA17BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		31C1C03D47F5C29B11CDE16E94E7DBC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3277715CFFD81D42C1FC3705E07DB2F1 /* OttuCheckout.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OttuCheckout/OttuCheckout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OttuCheckout/OttuCheckout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OttuCheckout/OttuCheckout.modulemap";
+				PRODUCT_MODULE_NAME = OttuCheckout;
+				PRODUCT_NAME = OttuCheckout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		969CF73C0B5F499225CAE643BCA49543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA88E1B7DD49EC5807B858305F34CFC /* Pods-OttuCheckout_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OttuCheckout_Example/Pods-OttuCheckout_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OttuCheckout_Example/Pods-OttuCheckout_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D6DAC397B1A1AC77A6DA4154A820715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 358655B400AEE8D71193BB4EC9609B84 /* Pods-OttuCheckout_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OttuCheckout_Tests/Pods-OttuCheckout_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OttuCheckout_Tests/Pods-OttuCheckout_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0CDBFFC0C6C876826947CBC7B6CAC4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2620B4856B926279BEEB2D16089EF748 /* Pods-OttuCheckout_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OttuCheckout_Example/Pods-OttuCheckout_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OttuCheckout_Example/Pods-OttuCheckout_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC9F766053ED3BF882FAB12D20E633A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E0D59D04E7EF75E1A540A9F785C78D /* Pods-OttuCheckout_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OttuCheckout_Tests/Pods-OttuCheckout_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OttuCheckout_Tests/Pods-OttuCheckout_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BF99614FADB381F9E7D8A926F93941B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AAA88E27B7337993F1C1762F7B42556 /* OttuCheckout.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OttuCheckout/OttuCheckout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OttuCheckout/OttuCheckout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OttuCheckout/OttuCheckout.modulemap";
+				PRODUCT_MODULE_NAME = OttuCheckout;
+				PRODUCT_NAME = OttuCheckout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D0704A582EC7193D789F798E7175A06 /* Build configuration list for PBXNativeTarget "Pods-OttuCheckout_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0CDBFFC0C6C876826947CBC7B6CAC4F /* Debug */,
+				969CF73C0B5F499225CAE643BCA49543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38BD9E73259CBF3F60B3C31C844164C2 /* Build configuration list for PBXNativeTarget "OttuCheckout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31C1C03D47F5C29B11CDE16E94E7DBC4 /* Debug */,
+				BF99614FADB381F9E7D8A926F93941B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4242E61FF89B7BB068065A04411C6B51 /* Build configuration list for PBXNativeTarget "Pods-OttuCheckout_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D6DAC397B1A1AC77A6DA4154A820715 /* Debug */,
+				BC9F766053ED3BF882FAB12D20E633A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "OttuCheckout",
+  "version": "0.1.0",
+  "summary": "A short description of OttuCheckout.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Yanenko Petr/OttuCheckout",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Yanenko Petr": "yanenkopetr1841@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Yanenko Petr/OttuCheckout.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "OttuCheckout/Classes/**/*"
+}

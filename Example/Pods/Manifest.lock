@@ -1,0 +1,16 @@
+PODS:
+  - OttuCheckout (0.1.0)
+
+DEPENDENCIES:
+  - OttuCheckout (from `../`)
+
+EXTERNAL SOURCES:
+  OttuCheckout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OttuCheckout: ca51a842248ecab9c9097b501f98f534a147ef03
+
+PODFILE CHECKSUM: 0a6655379b07a3fa2ce3dcc860234c3116766662
+
+COCOAPODS: 1.10.1
