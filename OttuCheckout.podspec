@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OttuCheckout'
-  s.version          = '0.0.7'
+  s.version          = '0.0.8'
   s.summary          = 'OttuCheckout it`s a simple apple pay integration SDK'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
   s.platforms = {
-      "ios": "13.0"
+      "ios": "12.0"
   }
 
   s.source_files = 'Source/**/*.swift'
