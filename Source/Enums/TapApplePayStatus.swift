@@ -14,6 +14,10 @@ import Foundation
     case NeedSetup
     /// This means the current device/user cannot use Apple pay from Apple
     case NotEligible
+    /// This means the to setup sessionID in Checkot
+    case SessionIDNotSetuped
+    /// This means the to setup domainURL in Checkot
+    case DomainURLNotSetuped
     
     
     public func ApplePayStatusRawValue() -> String {
@@ -24,6 +28,10 @@ import Foundation
             return "NeedSetup, This means the current device/user has Apple pay activated but has no card belongs to the given payment networks"
         case .NotEligible:
         return "NotEligible, This means the current device/user cannot use Apple pay from Apple"
+        case .DomainURLNotSetuped:
+            return "NeedSetup, This means the to setup domainURL in Checkot"
+        case .SessionIDNotSetuped:
+            return "NeedSetup, This means the to setup sessionID in Checkot"
         default:
             return ""
         }

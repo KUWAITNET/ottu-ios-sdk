@@ -47,17 +47,19 @@ public protocol CheckoutDelegate {
         self.amount = amount
     }
     
-    public func displayApplePayButton(applePayView:UIView) {
+    public func displayApplePayButton(applePayView:UIView) -> TapApplePayStatus {
         
         guard let _ = domainURL else {
-            return
+            return .DomainURLNotSetuped
         }
         
         guard let _ = sessionID else {
-            return
+            return .SessionIDNotSetuped
         }
         
-        if checkApplePayStats() == .Eligible {
+        let applePayStatus:TapApplePayStatus = checkApplePayStats()
+
+        if applePayStatus == .Eligible {
             if !isApplePayShowed {
                 tapApplePayButton = TapApplePayButton.init(frame: applePayView.bounds)
                 tapApplePayButton?.setup()
@@ -67,6 +69,8 @@ public protocol CheckoutDelegate {
                 isApplePayShowed = true
             }
         }
+        
+        return applePayStatus
     }
     
     func startApplePaySetup() {
