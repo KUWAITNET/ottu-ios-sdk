@@ -1,4 +1,4 @@
-﻿
+
 # OttuCheckout
 
 
@@ -90,8 +90,8 @@ applePayConfig.merchantID = "merchant"
 
 applePayConfig.merchantCapabilities = [.capability3DS]
 applePayConfig.paymentItems = [
-	PKPaymentSummaryItem(label: "My Product", amount: NSDecimalNumber(decimal: 1)),
-	PKPaymentSummaryItem(label: "Delivery Tax", amount: NSDecimalNumber(decimal: 2))
+    PKPaymentSummaryItem(label: "My Product", amount: NSDecimalNumber(decimal: 1)),
+    PKPaymentSummaryItem(label: "Delivery Tax", amount: NSDecimalNumber(decimal: 2))
 ]
 
 checkout.configure(applePayConfig: applePayConfig, amount: "1", currency_code: .SAR)
@@ -132,16 +132,16 @@ Now you can request Apple Pay button
 
 switch self.knpay.displayApplePayButton(applePayView: self.appleBtnView) {
 
-	case .Eligible:
-		break
-	case .NeedSetup:
-		break
-	case .NotEligible:
-		break
-	case .SessionIDNotSetuped:
-		break
-	case .DomainURLNotSetuped:
-		break
+    case .Eligible:
+        break
+    case .NeedSetup:
+        break
+    case .NotEligible:
+        break
+    case .SessionIDNotSetuped:
+        break
+    case .DomainURLNotSetuped:
+        break
 }
 
 ```
@@ -165,19 +165,19 @@ Then implement CheckoutDelegate protocol to your ViewController
 
 extension  ViewController: CheckoutDelegate {
 
-	func paymentFinished(yourDomainResponse: [String:**Any**], applePayResultCompletion: **@escaping** (PKPaymentAuthorizationResult) -> Void) {
+    func paymentFinished(yourDomainResponse: [String:Any], applePayResultCompletion: @escaping (PKPaymentAuthorizationResult) -> Void) {
 
-		if let approved = yourDomainResponse["approved"], approved as? Bool == true {
-			applePayResultCompletion(PKPaymentAuthorizationResult(status: .success, errors: nil))
-		}
-		else {
-			applePayResultCompletion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
-		}
-	}
+        if let approved = yourDomainResponse["approved"], approved as? Bool == true {
+            applePayResultCompletion(PKPaymentAuthorizationResult(status: .success, errors: nil))
+        }
+        else {
+            applePayResultCompletion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
+        }
+    }
 
-	func  paymentDissmised() {
-		//
-	}
+    func  paymentDissmised() {
+        //
+    }
 }
 
 ```

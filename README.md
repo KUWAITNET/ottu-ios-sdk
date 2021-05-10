@@ -1,4 +1,4 @@
-﻿
+
 # OttuCheckout
 
 
@@ -165,7 +165,7 @@ Then implement CheckoutDelegate protocol to your ViewController
 
 extension  ViewController: CheckoutDelegate {
 
-	func paymentFinished(yourDomainResponse: [String:**Any**], applePayResultCompletion: **@escaping** (PKPaymentAuthorizationResult) -> Void) {
+	func paymentFinished(yourDomainResponse: [String:Any], applePayResultCompletion: @escaping (PKPaymentAuthorizationResult) -> Void) {
 
 		if let approved = yourDomainResponse["approved"], approved as? Bool == true {
 			applePayResultCompletion(PKPaymentAuthorizationResult(status: .success, errors: nil))
