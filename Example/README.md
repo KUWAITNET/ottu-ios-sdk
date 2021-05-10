@@ -1,4 +1,4 @@
-
+﻿
 # OttuCheckout
 
 
@@ -42,7 +42,13 @@ pod 'OttuCheckout'
 
 ## Using
 
-  
+    
+
+#### Integrate with Xcode
+
+Add the ****Apple Pay**** capability to your app. In Xcode, open your project settings, choose the ****Capabilities**** tab, and enable the ****Apple Pay**** switch. You may be prompted to log in to your developer account at this point. Enable the checkbox next to the merchant ID you created earlier, and your app is ready to accept Apple Pay.
+
+![Enable the Apple pay capability in Xcode](https://storage.stfalcon.com/uploads/images/5c45cffa7e8f6.png)
 
 ### Setup
 
@@ -62,7 +68,7 @@ Then create variable like this
 
 ```
 
-var checkout = Checkout()
+var checkout = Checkout!
 
 ```
 
@@ -70,7 +76,7 @@ After this you can set config apple pay request
 
 ```
 
-checkout.domainURL = "domain"
+checkout.domainUrl = "domain"
 
 checkout.sessionID = "session_id"
 
@@ -83,13 +89,12 @@ applePayConfig.countryCode = .SR
 applePayConfig.merchantID = "merchant"
 
 applePayConfig.merchantCapabilities = [.capability3DS]
-
 applePayConfig.paymentItems = [
-    PKPaymentSummaryItem(label: "My Product", amount: NSDecimalNumber(decimal: 1)),
-    PKPaymentSummaryItem(label: "Delivery Tax", amount: NSDecimalNumber(decimal: 2))
+	PKPaymentSummaryItem(label: "My Product", amount: NSDecimalNumber(decimal: 1)),
+	PKPaymentSummaryItem(label: "Delivery Tax", amount: NSDecimalNumber(decimal: 2))
 ]
 
-checkout.configure(applePayConfig: applePayConfig, amount: "1", currency_code: .SAR, viewController: self)
+checkout.configure(applePayConfig: applePayConfig, amount: "1", currency_code: .SAR)
 
 ```
 
@@ -104,9 +109,9 @@ checkout.configure(applePayConfig: applePayConfig, amount: "1", currency_code: .
 | applePayConfig.merchantCapabilities | [`PKMerchantCapability`](https://developer.apple.com/documentation/passkit/pkmerchantcapability/) |Capabilities for processing payment. | [.capability3DS] |
 | amount | [`PKPaymentSummaryItem`](https://developer.apple.com/documentation/passkit/pkpaymentsummaryitem) |An object that defines a summary item in a payment request—for example, total, tax, discount, or grand total. | no |
 | currency_code | [`String`](https://developer.apple.com/documentation/passkit/pkpaymentrequest/1619246-countrycode) |The three-letter ISO 4217 currency code. | no |
-| domainURL | [`String`](https://developer.apple.com/documentation/passkit/pkpaymentrequest/1619246-countrycode) | API pay url, where payment shall be confirmed against Apple Pay token | no |
+| domainUrl | [`String`](https://developer.apple.com/documentation/passkit/pkpaymentrequest/1619246-countrycode) | API pay url, where payment shall be confirmed against Apple Pay token | no |
 | sessionID | [`String`](https://developer.apple.com/documentation/passkit/pkpaymentrequest/1619246-countrycode) | Specified token which you need to get here https://docs.ottu.com/#/sessionAPI | no |
-| viewController | [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) | ViewController wich using Checkout class | no |
+
 
 
   
@@ -125,7 +130,19 @@ Now you can request Apple Pay button
 
 ```
 
-checkout.displayApplePayButton(applePayView: applePayButtonView)
+switch self.knpay.displayApplePayButton(applePayView: self.appleBtnView) {
+
+	case .Eligible:
+		break
+	case .NeedSetup:
+		break
+	case .NotEligible:
+		break
+	case .SessionIDNotSetuped:
+		break
+	case .DomainURLNotSetuped:
+		break
+}
 
 ```
 
@@ -133,12 +150,37 @@ checkout.displayApplePayButton(applePayView: applePayButtonView)
 
 You can put code above in any place but before you start using SDK.
 
-  
 
-#### Integrate with Xcode
-Add the **Apple Pay** capability to your app. In Xcode, open your project settings, choose the **Capabilities** tab, and enable the **Apple Pay** switch. You may be prompted to log in to your developer account at this point. Enable the checkbox next to the merchant ID you created earlier, and your app is ready to accept Apple Pay.
- ![Enable the Apple pay capability in Xcode](https://storage.stfalcon.com/uploads/images/5c45cffa7e8f6.png)
 
+  ### Delegate
+  You need to delegate Chekout 
+```
+
+checkout.delegate = self
+
+```
+Then implement CheckoutDelegate protocol to your ViewController
+
+```
+
+extension  ViewController: CheckoutDelegate {
+
+	func paymentFinished(yourDomainResponse: [String:**Any**], applePayResultCompletion: **@escaping** (PKPaymentAuthorizationResult) -> Void) {
+
+		if let approved = yourDomainResponse["approved"], approved as? Bool == true {
+			applePayResultCompletion(PKPaymentAuthorizationResult(status: .success, errors: nil))
+		}
+		else {
+			applePayResultCompletion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
+		}
+	}
+
+	func  paymentDissmised() {
+		//
+	}
+}
+
+```
 
 
 ## Author

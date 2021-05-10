@@ -140,7 +140,19 @@ class ViewController: UIViewController {
         addApplePayButton.rx.tap.subscribe(onNext: {
             _ in
             
-            self.knpay.displayApplePayButton(applePayView: self.appleBtnView)
+            switch self.knpay.displayApplePayButton(applePayView: self.appleBtnView) {
+                case .Eligible:
+                    break
+                case .NeedSetup:
+                    break
+                case .NotEligible:
+                    break
+                case .SessionIDNotSetuped:
+                    break
+                case .DomainURLNotSetuped:
+                    break
+            }
+            
             self.isApplePayBtnPresented = true
             self.addApplePayButton.isHidden = true
             

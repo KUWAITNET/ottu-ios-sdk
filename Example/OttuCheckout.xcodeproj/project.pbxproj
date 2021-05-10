@@ -41,7 +41,7 @@
 		B1186818F2AE13B6BF13B0DA /* Pods-OttuCheckout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OttuCheckout_Tests.release.xcconfig"; path = "Target Support Files/Pods-OttuCheckout_Tests/Pods-OttuCheckout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DB3CB5C33FB396F9ACE2A3C6 /* Pods-OttuCheckout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OttuCheckout_Example.debug.xcconfig"; path = "Target Support Files/Pods-OttuCheckout_Example/Pods-OttuCheckout_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DC3709B350E4843B4BE28657 /* Pods_OttuCheckout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OttuCheckout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD6BF09326430F38001BB164 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DD45B5A22649E35500FA9B60 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DD6BF09426430F52001BB164 /* OttuCheckout_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OttuCheckout_Example.entitlements; sourceTree = "<group>"; };
 		DD6BF09C26430FFB001BB164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD6BF0A226431065001BB164 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				3BCE6FD64A8503E85E9C0BB9 /* OttuCheckout.podspec */,
-				DD6BF09326430F38001BB164 /* README.md */,
+				DD45B5A22649E35500FA9B60 /* README.md */,
 				E55398A9F0A56AB780999167 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
