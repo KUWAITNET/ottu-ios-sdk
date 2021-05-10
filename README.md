@@ -135,6 +135,10 @@ You can put code above in any place but before you start using SDK.
 
   
 
+#### Integrate with Xcode
+Add the **Apple Pay** capability to your app. In Xcode, open your project settings, choose the **Capabilities** tab, and enable the **Apple Pay** switch. You may be prompted to log in to your developer account at this point. Enable the checkbox next to the merchant ID you created earlier, and your app is ready to accept Apple Pay.
+ ![Enable the Apple pay capability in Xcode](https://storage.stfalcon.com/uploads/images/5c45cffa7e8f6.png)
+
 
 
 ## Author
