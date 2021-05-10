@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/KuwaitNET/ottu-ios-sdk/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Ottu' => 'mailto:Info@ottu.com' }
+  s.author           = { 'Ottu' => 'Info@ottu.com' }
   s.source           = { :git => 'https://github.com/KuwaitNET/ottu-ios-sdk.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.1'
