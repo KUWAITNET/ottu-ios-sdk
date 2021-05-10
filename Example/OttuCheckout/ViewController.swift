@@ -48,7 +48,12 @@ class ViewController: UIViewController {
                 config.cards = [.Amex, .Visa, .MasterCard]
                 config.countryCode = .SR
                 config.merchantCapabilities = [.capability3DS]
-                   
+                
+                config.paymentItems = [
+                    PKPaymentSummaryItem(label: "My Product", amount: NSDecimalNumber(decimal: 1)),
+                    PKPaymentSummaryItem(label: "Delivery Tax", amount: NSDecimalNumber(decimal: 2))
+                ]
+                
                 self.knpay.sessionID = self.sessionTextField.text!
                 self.knpay.domainURL = "ksa.ottu.dev"
                 self.knpay.code = self.codeTextField.text!

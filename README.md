@@ -84,6 +84,11 @@ applePayConfig.merchantID = "merchant"
 
 applePayConfig.merchantCapabilities = [.capability3DS]
 
+applePayConfig.paymentItems = [
+    PKPaymentSummaryItem(label: "My Product", amount: NSDecimalNumber(decimal: 1)),
+    PKPaymentSummaryItem(label: "Delivery Tax", amount: NSDecimalNumber(decimal: 2))
+]
+
 checkout.configure(applePayConfig: applePayConfig, amount: "1", currency_code: .SAR, viewController: self)
 
 ```
