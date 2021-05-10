@@ -489,6 +489,7 @@
 				CODE_SIGN_ENTITLEMENTS = OttuCheckout_Example.entitlements;
 				DEVELOPMENT_TEAM = 39Z747966Q;
 				INFOPLIST_FILE = OttuCheckout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.10;
 				MODULE_NAME = ExampleApp;
@@ -507,6 +508,7 @@
 				CODE_SIGN_ENTITLEMENTS = OttuCheckout_Example.entitlements;
 				DEVELOPMENT_TEAM = 39Z747966Q;
 				INFOPLIST_FILE = OttuCheckout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.10;
 				MODULE_NAME = ExampleApp;

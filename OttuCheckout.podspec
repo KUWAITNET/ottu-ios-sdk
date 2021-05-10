@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OttuCheckout'
-  s.version          = '0.0.8'
+  s.version          = '0.0.9'
   s.summary          = 'OttuCheckout it`s a simple apple pay integration SDK'
 
 # This description is used to generate tags and improve search results.
@@ -26,10 +26,10 @@ Pod::Spec.new do |s|
   s.author           = { 'Ottu' => 'mailto:Info@ottu.com' }
   s.source           = { :git => 'https://github.com/KuwaitNET/ottu-ios-sdk.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '12.1'
   s.swift_version = '5.0'
   s.platforms = {
-      "ios": "12.0"
+      "ios": "12.1"
   }
 
   s.source_files = 'Source/**/*.swift'
