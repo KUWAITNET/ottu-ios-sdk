@@ -1,4 +1,4 @@
-﻿
+
 # OttuCheckout
 
 
@@ -62,7 +62,7 @@ Then create variable like this
 
 ```
 
-var checkout = Checkout!
+var checkout = Checkout()
 
 ```
 
@@ -70,7 +70,7 @@ After this you can set config apple pay request
 
 ```
 
-checkout.domainUrl = "domain"
+checkout.domainURL = "domain"
 
 checkout.sessionID = "session_id"
 
@@ -84,7 +84,7 @@ applePayConfig.merchantID = "merchant"
 
 applePayConfig.merchantCapabilities = [.capability3DS]
 
-checkout.configure(applePayConfig: applePayConfig, amount: "1", currency_code: .SAR)
+checkout.configure(applePayConfig: applePayConfig, amount: "1", currency_code: .SAR, viewController: self)
 
 ```
 
@@ -99,9 +99,9 @@ checkout.configure(applePayConfig: applePayConfig, amount: "1", currency_code: .
 | applePayConfig.merchantCapabilities | [`PKMerchantCapability`](https://developer.apple.com/documentation/passkit/pkmerchantcapability/) |Capabilities for processing payment. | [.capability3DS] |
 | amount | [`PKPaymentSummaryItem`](https://developer.apple.com/documentation/passkit/pkpaymentsummaryitem) |An object that defines a summary item in a payment request—for example, total, tax, discount, or grand total. | no |
 | currency_code | [`String`](https://developer.apple.com/documentation/passkit/pkpaymentrequest/1619246-countrycode) |The three-letter ISO 4217 currency code. | no |
-| domainUrl | [`String`](https://developer.apple.com/documentation/passkit/pkpaymentrequest/1619246-countrycode) | API pay url, where payment shall be confirmed against Apple Pay token | no |
+| domainURL | [`String`](https://developer.apple.com/documentation/passkit/pkpaymentrequest/1619246-countrycode) | API pay url, where payment shall be confirmed against Apple Pay token | no |
 | sessionID | [`String`](https://developer.apple.com/documentation/passkit/pkpaymentrequest/1619246-countrycode) | Specified token which you need to get here https://docs.ottu.com/#/sessionAPI | no |
-
+| viewController | [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) | ViewController wich using Checkout class | no |
 
 
   

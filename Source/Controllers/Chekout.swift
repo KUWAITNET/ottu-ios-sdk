@@ -16,11 +16,11 @@ public protocol CheckoutDelegate {
 @available(iOS 12.0, *)
 @objcMembers public class Checkout:NSObject {
     
-    private var parrentVC: UIViewController
+    private var parrentVC: UIViewController!
     private var paymentAmount:NSDecimalNumber!
     private var tapApplePayButton:TapApplePayButton?
     
-    public var domainUrl:String!
+    public var domainURL:String!
     public var sessionID:String!
     public var code:String = "apple-pay"
     private var amount:String!
@@ -37,22 +37,19 @@ public protocol CheckoutDelegate {
         "prepaid",
         "store"
     ]
-    
-    public init(viewController:UIViewController) {
-        parrentVC = viewController
-    }
-    
-    public func configure(applePayConfig:ApplePayConfig, amount:String, currency_code:CurrencyCode) {
+
+    public func configure(applePayConfig:ApplePayConfig, amount:String, currency_code:CurrencyCode, viewController: UIViewController) {
         
         myApplePayRequest.build(with: applePayConfig.countryCode, paymentNetworks: applePayConfig.cards, paymentItems: applePayConfig.paymentItems, paymentAmount: Double(amount) ?? 1, currencyCode: currency_code, merchantID: applePayConfig.merchantID, merchantCapapbility: applePayConfig.merchantCapabilities)
         
+        self.parrentVC = viewController
         self.currency_code = currency_code.appleRawValue
         self.amount = amount
     }
     
     public func displayApplePayButton(applePayView:UIView) {
         
-        guard let _ = domainUrl else {
+        guard let _ = domainURL else {
             return
         }
         
@@ -107,7 +104,7 @@ extension Checkout:TapApplePayButtonDataSource,TapApplePayButtonDelegate {
     
     public func tapApplePayFinished(payment: PKPayment, completion: @escaping (PKPaymentAuthorizationResult) -> Void) {
         
-        guard let domain = domainUrl else {
+        guard let domain = domainURL else {
             completion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
             return
         }

@@ -14,7 +14,7 @@ import PassKit
 
 class ViewController: UIViewController {
     
-    var knpay:Checkout!
+    var knpay = Checkout()
     
     @IBOutlet weak var addApplePayButton:UIButton!
     @IBOutlet weak var priceTextField:UITextField!
@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         setupViewConfiguration()
         codeTextField.attributedPlaceholder = NSAttributedString(string: "Like this: apple-pay",
                                      attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        knpay.delegate = self
     }
     
     func checkApplePayBtnVisible() {
@@ -49,9 +50,9 @@ class ViewController: UIViewController {
                 config.merchantCapabilities = [.capability3DS]
                    
                 self.knpay.sessionID = self.sessionTextField.text!
-                self.knpay.domainUrl = "ksa.ottu.dev"
+                self.knpay.domainURL = "ksa.ottu.dev"
                 self.knpay.code = self.codeTextField.text!
-                self.knpay.configure(applePayConfig: config, amount: self.priceTextField.text!, currency_code: .SAR)
+                self.knpay.configure(applePayConfig: config, amount: self.priceTextField.text!, currency_code: .SAR, viewController: self)
                 
                 self.appleBtnView.alpha = 1
             }
@@ -141,12 +142,6 @@ class ViewController: UIViewController {
         }).disposed(by: disposeBag)
         
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        knpay = Checkout(viewController: self)
-        knpay.delegate = self
-    }
-    
     
     @objc
     dynamic func keyboardWillShow(
