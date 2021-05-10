@@ -10,16 +10,10 @@ import PassKit
 
 public class ApplePayConfig:NSObject {
     
-    var countryCode:CountryCode
-    var cards : [TapApplePayPaymentNetwork] = [.Amex, .Visa, .MasterCard]
-    var paymentItems:[PKPaymentSummaryItem] = []
+    public var countryCode:CountryCode = .SR
+    public var merchantID:String = String()
+    public var cards : [TapApplePayPaymentNetwork] = [.Amex, .Visa, .MasterCard]
+    public var paymentItems:[PKPaymentSummaryItem] = []
+    public var merchantCapabilities:PKMerchantCapability = [.capability3DS]
     
-    public init(_countryCode:CountryCode, _cards : [TapApplePayPaymentNetwork], _paymentItems:[PKPaymentSummaryItem]?) {
-        countryCode = _countryCode
-        cards = _cards
-        
-        if let newItems = _paymentItems {
-            paymentItems = newItems
-        }
-    }
 }

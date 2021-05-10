@@ -1,16 +1,33 @@
 PODS:
-  - OttuCheckout (0.1.0)
+  - OttuCheckout (0.0.2)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.2)
 
 DEPENDENCIES:
   - OttuCheckout (from `../`)
+  - RxCocoa
+  - RxSwift (~> 5)
+
+SPEC REPOS:
+  trunk:
+    - RxCocoa
+    - RxRelay
+    - RxSwift
 
 EXTERNAL SOURCES:
   OttuCheckout:
     :path: "../"
 
 SPEC CHECKSUMS:
-  OttuCheckout: ca51a842248ecab9c9097b501f98f534a147ef03
+  OttuCheckout: bc0bc5eb88d8d5f8a47c502fe35da6fa505c863f
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
 
-PODFILE CHECKSUM: 0a6655379b07a3fa2ce3dcc860234c3116766662
+PODFILE CHECKSUM: 8d37fbc740cf70dca65001ec50c641d05e8b14f4
 
 COCOAPODS: 1.10.1

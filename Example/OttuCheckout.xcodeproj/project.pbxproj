@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A261FF35EFC99EF1C2AE6CB9 /* Pods_OttuCheckout_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3709B350E4843B4BE28657 /* Pods_OttuCheckout_Tests.framework */; };
+		DD6BF09D26430FFB001BB164 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6BF09B26430FFB001BB164 /* Main.storyboard */; };
+		DD6BF0A326431065001BB164 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6BF0A226431065001BB164 /* LaunchScreen.storyboard */; };
 		EEF6CEAFCC81B319D0F88288 /* Pods_OttuCheckout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CC943EEA435CED4304A328 /* Pods_OttuCheckout_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,16 +34,17 @@
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* OttuCheckout_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OttuCheckout_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		B1186818F2AE13B6BF13B0DA /* Pods-OttuCheckout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OttuCheckout_Tests.release.xcconfig"; path = "Target Support Files/Pods-OttuCheckout_Tests/Pods-OttuCheckout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DB3CB5C33FB396F9ACE2A3C6 /* Pods-OttuCheckout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OttuCheckout_Example.debug.xcconfig"; path = "Target Support Files/Pods-OttuCheckout_Example/Pods-OttuCheckout_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DC3709B350E4843B4BE28657 /* Pods_OttuCheckout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OttuCheckout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC6B4FB23F0B9F03B0F34609 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DD6BF09326430F38001BB164 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DD6BF09426430F52001BB164 /* OttuCheckout_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OttuCheckout_Example.entitlements; sourceTree = "<group>"; };
+		DD6BF09C26430FFB001BB164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD6BF0A226431065001BB164 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E55398A9F0A56AB780999167 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F2CC943EEA435CED4304A328 /* Pods_OttuCheckout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OttuCheckout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C672CF4EA1B76EA8437377 /* Pods-OttuCheckout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OttuCheckout_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OttuCheckout_Tests/Pods-OttuCheckout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				DD6BF09426430F52001BB164 /* OttuCheckout_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for OttuCheckout */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -106,9 +108,9 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				DD6BF0A226431065001BB164 /* LaunchScreen.storyboard */,
+				DD6BF09B26430FFB001BB164 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for OttuCheckout";
@@ -144,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				3BCE6FD64A8503E85E9C0BB9 /* OttuCheckout.podspec */,
-				DC6B4FB23F0B9F03B0F34609 /* README.md */,
+				DD6BF09326430F38001BB164 /* README.md */,
 				E55398A9F0A56AB780999167 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
@@ -246,8 +248,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				DD6BF0A326431065001BB164 /* LaunchScreen.storyboard in Resources */,
+				DD6BF09D26430FFB001BB164 /* Main.storyboard in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,10 +294,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OttuCheckout_Example/Pods-OttuCheckout_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OttuCheckout/OttuCheckout.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OttuCheckout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -355,20 +363,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+		DD6BF09B26430FFB001BB164 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
+				DD6BF09C26430FFB001BB164 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -486,12 +486,13 @@
 			baseConfigurationReference = DB3CB5C33FB396F9ACE2A3C6 /* Pods-OttuCheckout_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OttuCheckout_Example.entitlements;
 				DEVELOPMENT_TEAM = 39Z747966Q;
 				INFOPLIST_FILE = OttuCheckout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 0.1.2;
+				MARKETING_VERSION = 1.10;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = KBSoft.KNPAY.production;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
@@ -503,12 +504,13 @@
 			baseConfigurationReference = 14FF6FF67765F31BCDB3B024 /* Pods-OttuCheckout_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OttuCheckout_Example.entitlements;
 				DEVELOPMENT_TEAM = 39Z747966Q;
 				INFOPLIST_FILE = OttuCheckout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 0.1.2;
+				MARKETING_VERSION = 1.10;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = KBSoft.KNPAY.production;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;

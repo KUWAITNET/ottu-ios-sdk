@@ -22,6 +22,8 @@ import PassKit
     public lazy var paymentAmount:Double = 0
     /// The apple pay merchant identefier
     public lazy var merchantID:String = ""
+    /// The apple pay merchant capabilities
+    public lazy var merchantCapability:PKMerchantCapability = [.capability3DS]
     
     /// The actual apple pay request
     public lazy var appleRequest:PKPaymentRequest = .init()
@@ -35,13 +37,14 @@ import PassKit
      - Parameter paymentAmount: The total amount you want to collect
      - Parameter merchantID: The apple pay merchant identefier default ""
      **/
-    public func build(with countryCode:CountryCode = .US, paymentNetworks:[TapApplePayPaymentNetwork] = [.Amex,.Visa,.MasterCard], paymentItems:[PKPaymentSummaryItem] = [], paymentAmount:Double,currencyCode:CurrencyCode = .USD,merchantID:String) {
+    public func build(with countryCode:CountryCode = .US, paymentNetworks:[TapApplePayPaymentNetwork] = [.Amex,.Visa,.MasterCard], paymentItems:[PKPaymentSummaryItem] = [], paymentAmount:Double,currencyCode:CurrencyCode = .USD,merchantID:String, merchantCapapbility:PKMerchantCapability = [.capability3DS]) {
         self.countryCode = countryCode
         self.paymentNetworks = paymentNetworks
         self.paymentItems = paymentItems
         self.paymentAmount = paymentAmount
         self.currencyCode = currencyCode
         self.merchantID = merchantID
+        self.merchantCapability = merchantCapapbility
         configureApplePayRequest()
     }
     
@@ -57,6 +60,6 @@ import PassKit
         appleRequest.paymentSummaryItems.append(.init(label: "", amount: NSDecimalNumber(value: paymentAmount)))
         appleRequest.supportedNetworks = paymentNetworks.map{ $0.applePayNetwork! }
         appleRequest.merchantIdentifier = merchantID
-        appleRequest.merchantCapabilities = [.capability3DS,.capabilityCredit,.capabilityDebit,.capabilityEMV]
+        appleRequest.merchantCapabilities = merchantCapability
     }
 }

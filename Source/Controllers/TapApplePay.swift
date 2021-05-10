@@ -64,9 +64,7 @@ import class UIKit.UIViewController
         
         let paymentController = PKPaymentAuthorizationController.init(paymentRequest: tapApplePayRequest.appleRequest)
         paymentController.delegate = self //presenter as? PKPaymentAuthorizationControllerDelegate
-        paymentController.present { (done) in
-            print("PRESENTED : \(done)")
-        }
+        paymentController.present(completion: nil)
     }
     
     /// This will trigger the provided Apple pay official method for starting the wallet app

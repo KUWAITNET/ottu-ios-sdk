@@ -19,8 +19,12 @@ public protocol CheckoutDelegate {
     private var parrentVC: UIViewController
     private var paymentAmount:NSDecimalNumber!
     private var tapApplePayButton:TapApplePayButton?
-    private var domainUrl:String = String()
-    private var sessionID:String = String()
+    
+    public var domainUrl:String!
+    public var sessionID:String!
+    public var code:String = "apple-pay"
+    private var amount:String!
+    private var currency_code:String!
 
     private var isApplePayShowed:Bool = false
     
@@ -38,15 +42,24 @@ public protocol CheckoutDelegate {
         parrentVC = viewController
     }
     
-    public func configure(applePayConfig:ApplePayConfig, amount:String, currency_code:CurrencyCode, merchantID:String, domain:String, session_id:String) {
+    public func configure(applePayConfig:ApplePayConfig, amount:String, currency_code:CurrencyCode) {
         
-        domainUrl = domain
-        sessionID = session_id
-                
-        myApplePayRequest.build(with: applePayConfig.countryCode, paymentNetworks: applePayConfig.cards, paymentItems: applePayConfig.paymentItems, paymentAmount: Double(amount) ?? 1, currencyCode: currency_code, merchantID: merchantID)
+        myApplePayRequest.build(with: applePayConfig.countryCode, paymentNetworks: applePayConfig.cards, paymentItems: applePayConfig.paymentItems, paymentAmount: Double(amount) ?? 1, currencyCode: currency_code, merchantID: applePayConfig.merchantID, merchantCapapbility: applePayConfig.merchantCapabilities)
+        
+        self.currency_code = currency_code.appleRawValue
+        self.amount = amount
     }
     
     public func displayApplePayButton(applePayView:UIView) {
+        
+        guard let _ = domainUrl else {
+            return
+        }
+        
+        guard let _ = sessionID else {
+            return
+        }
+        
         if checkApplePayStats() == .Eligible {
             if !isApplePayShowed {
                 tapApplePayButton = TapApplePayButton.init(frame: applePayView.bounds)
@@ -94,7 +107,17 @@ extension Checkout:TapApplePayButtonDataSource,TapApplePayButtonDelegate {
     
     public func tapApplePayFinished(payment: PKPayment, completion: @escaping (PKPaymentAuthorizationResult) -> Void) {
         
-        let url = URL(string: "\(domainUrl)/b/session/api/v1/pay")!
+        guard let domain = domainUrl else {
+            completion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
+            return
+        }
+        
+        guard let session = sessionID else {
+            completion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
+            return
+        }
+        
+        let url = URL(string: "https://\(domain)/b/session/api/v1/pay")!
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -103,8 +126,10 @@ extension Checkout:TapApplePayButtonDataSource,TapApplePayButtonDelegate {
             let paymentData = try JSONSerialization.jsonObject(with: payment.token.paymentData, options: .mutableContainers) as? [String:AnyObject]
             
             let postData = [
-                "session_id": sessionID,
-                "code": "apple-pay",
+                "amount":self.amount!,
+                "currency_code":self.currency_code!,
+                "session_id": session,
+                "code": self.code,
                 "device": UIDevice().type.rawValue,
                 "apple_pay_payload": [
                     "token": [
@@ -143,7 +168,7 @@ extension Checkout:TapApplePayButtonDataSource,TapApplePayButtonDelegate {
                             completion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
                             return
                         }
-                                                
+                        
                         guard let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String:AnyObject] else {
                             completion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
                             return
