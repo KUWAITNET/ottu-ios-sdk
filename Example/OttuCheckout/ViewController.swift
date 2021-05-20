@@ -48,7 +48,8 @@ class ViewController: UIViewController {
                 config.cards = [.Amex, .Visa, .MasterCard]
                 config.countryCode = .SR
                 config.merchantCapabilities = [.capability3DS]
-                
+                config.code = self.codeTextField.text!
+
                 config.paymentItems = [
                     PKPaymentSummaryItem(label: "My Product", amount: NSDecimalNumber(decimal: 1)),
                     PKPaymentSummaryItem(label: "Delivery Tax", amount: NSDecimalNumber(decimal: 2))
@@ -56,7 +57,6 @@ class ViewController: UIViewController {
                 
                 self.knpay.sessionID = self.sessionTextField.text!
                 self.knpay.domainURL = "ksa.ottu.dev"
-                self.knpay.code = self.codeTextField.text!
                 self.knpay.configure(applePayConfig: config, amount: self.priceTextField.text!, currency_code: .SAR, viewController: self)
                 
                 self.appleBtnView.alpha = 1
@@ -151,6 +151,8 @@ class ViewController: UIViewController {
                     break
                 case .DomainURLNotSetuped:
                     break
+                case .CodeNotSetuped:
+                    break
             }
             
             self.isApplePayBtnPresented = true
@@ -238,6 +240,10 @@ extension Decimal {
 }
 
 extension ViewController: CheckoutDelegate {
+    
+    func onErrorHandler(serverResponse: [String : Any]?, statusCode: Int?, error: Error?) {
+        // Check any error from server
+    }
         
     func paymentFinished(yourDomainResponse: [String:Any], applePayResultCompletion: @escaping (PKPaymentAuthorizationResult) -> Void) {
         

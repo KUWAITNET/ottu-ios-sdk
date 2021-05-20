@@ -18,7 +18,8 @@ import Foundation
     case SessionIDNotSetuped
     /// This means the to setup domainURL in Checkot
     case DomainURLNotSetuped
-    
+    /// This means the to setup code in Checkot
+    case CodeNotSetuped
     
     public func ApplePayStatusRawValue() -> String {
         switch self {
@@ -32,6 +33,8 @@ import Foundation
             return "NeedSetup, This means the to setup domainURL in Checkot"
         case .SessionIDNotSetuped:
             return "NeedSetup, This means the to setup sessionID in Checkot"
+        case .CodeNotSetuped:
+            return "NeedSetup, This means the to setup code in Checkot"
         default:
             return ""
         }

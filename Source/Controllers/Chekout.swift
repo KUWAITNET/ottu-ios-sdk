@@ -10,6 +10,7 @@ import PassKit
 @available(iOS 11.0, *)
 public protocol CheckoutDelegate {
     func paymentFinished(yourDomainResponse:[String:Any], applePayResultCompletion: @escaping (PKPaymentAuthorizationResult) -> Void)
+    func onErrorHandler(serverResponse:[String:Any]?, statusCode:Int?, error:Error?)
     func paymentDissmised()
 }
 
@@ -22,7 +23,7 @@ public protocol CheckoutDelegate {
     
     public var domainURL:String!
     public var sessionID:String!
-    public var code:String = "apple-pay"
+    private var code:String!
     private var amount:String!
     private var currency_code:String!
 
@@ -45,6 +46,7 @@ public protocol CheckoutDelegate {
         self.parrentVC = viewController
         self.currency_code = currency_code.appleRawValue
         self.amount = amount
+        self.code = applePayConfig.code
     }
     
     public func displayApplePayButton(applePayView:UIView) -> TapApplePayStatus {
@@ -54,6 +56,10 @@ public protocol CheckoutDelegate {
         }
         
         guard let _ = sessionID else {
+            return .SessionIDNotSetuped
+        }
+        
+        guard let _ = code else {
             return .SessionIDNotSetuped
         }
         
@@ -130,7 +136,7 @@ extension Checkout:TapApplePayButtonDataSource,TapApplePayButtonDelegate {
                 "amount":self.amount!,
                 "currency_code":self.currency_code!,
                 "session_id": session,
-                "code": self.code,
+                "code": self.code!,
                 "device": UIDevice().type.rawValue,
                 "apple_pay_payload": [
                     "token": [
@@ -154,26 +160,37 @@ extension Checkout:TapApplePayButtonDataSource,TapApplePayButtonDelegate {
                 
                 let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                     do {
+
                         guard let data = data else {
                             if let error = error {
+                                self.delegate?.onErrorHandler(serverResponse: nil, statusCode: nil, error: error)
                                 completion(PKPaymentAuthorizationResult(status: .failure, errors: [error]))
                             }
                             else {
+                                self.delegate?.onErrorHandler(serverResponse: nil, statusCode: nil, error: error)
                                 completion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
                             }
                             return
                         }
                         
-                        guard let httpResponse = response as? HTTPURLResponse,
-                              (200...299).contains(httpResponse.statusCode) else {
+                        guard let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String:AnyObject] else {
+                            self.delegate?.onErrorHandler(serverResponse: nil, statusCode: nil, error: nil)
                             completion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
                             return
                         }
                         
-                        guard let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String:AnyObject] else {
+                        guard let httpResponse = response as? HTTPURLResponse else {
+                            self.delegate?.onErrorHandler(serverResponse: json, statusCode: nil, error: nil)
                             completion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
                             return
                         }
+                        
+                        if !(200...299).contains(httpResponse.statusCode) {
+                            self.delegate?.onErrorHandler(serverResponse: json, statusCode: httpResponse.statusCode, error: nil)
+                            completion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
+                            return
+                        }
+                        
                         
                         self.delegate?.paymentFinished(yourDomainResponse: json, applePayResultCompletion: completion)
                         
