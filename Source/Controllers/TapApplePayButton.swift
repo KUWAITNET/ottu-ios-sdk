@@ -109,6 +109,11 @@ import PassKit
         }
     }
     
+    //MARK: Flutter plugin (Payment without button)
+    func pay(){
+        applePayClicked(applePayButton!)
+    }
+    
     /// This will start the native Apple Pay authprization process
     internal func startApplePaymentAuthorization() {
         // It is a must to have a data source, henc the payment request itself

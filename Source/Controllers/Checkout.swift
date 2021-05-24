@@ -83,6 +83,34 @@ public protocol CheckoutDelegate {
         ApplePay.startApplePaySetupProcess()
     }
     
+    //MARK: Flutter plugin (Payment without button)
+    public func pay(viewController:UIViewController)-> TapApplePayStatus{
+        guard let _ = domainURL else {
+            return .DomainURLNotSetuped
+        }
+        
+        guard let _ = sessionID else {
+            return .SessionIDNotSetuped
+        }
+        
+        let applePayStatus:TapApplePayStatus = checkApplePayStats()
+
+        if applePayStatus == .Eligible {
+            if !isApplePayShowed {
+                tapApplePayButton = TapApplePayButton.init(frame: viewController.view.bounds)
+                tapApplePayButton?.setup()
+                tapApplePayButton?.dataSource = self
+                tapApplePayButton?.delegate = self
+                tapApplePayButton?.isHidden = true
+                viewController.view.addSubview(tapApplePayButton!)
+                isApplePayShowed = true
+                
+            }
+            tapApplePayButton?.pay()
+        }
+        return applePayStatus
+    }
+    
     private func checkApplePayStats() -> TapApplePayStatus  {
         return ApplePay.applePayStatus(for: myApplePayRequest.paymentNetworks, shouldOpenSetupDirectly: false)
     }

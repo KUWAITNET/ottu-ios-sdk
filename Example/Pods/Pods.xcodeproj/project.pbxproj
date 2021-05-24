@@ -97,7 +97,7 @@
 		4CFF1535651421015708F8D7B0B34A72 /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057E4D71268F299565CE134A31A1D61 /* RecursiveLock.swift */; };
 		4D02F2DDF69664DE26E18263A87E1577 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A68A8F03A0E079B1C6DA101F09E701 /* Merge.swift */; };
 		4DAEB64861955FE51DC5DFD39B2A1C1D /* RxTableViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46463DC1B94F0F12AFAD7CFE81F1274D /* RxTableViewDelegateProxy.swift */; };
-		4F0904CB803C1DDC70F240497F499BE6 /* Chekout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A46565DADF7DC12A3E522AA7CCDC32 /* Chekout.swift */; };
+		4F0904CB803C1DDC70F240497F499BE6 /* Checkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A46565DADF7DC12A3E522AA7CCDC32 /* Checkout.swift */; };
 		4F31681A0B47D41822A1133AEC3E2015 /* SerialDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EE9D506F57D32FF84EF06BE7AAB7C3 /* SerialDispatchQueueScheduler.swift */; };
 		50D7E0C6C7DF578EFE41FBB793E8EC72 /* MainScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0341D74FF1B9C7A5D27248F6DDB20F /* MainScheduler.swift */; };
 		519CF3AAEC307B5130BA02E8460DF541 /* _RXObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD8B46E1F1F2A505F0F3F9BF63F2E00 /* _RXObjCRuntime.m */; };
@@ -577,7 +577,7 @@
 		908918103E377EE1C69AA0EF69EE760E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		90ED012381ED33D98A4CF5D90FC73A56 /* RxSearchControllerDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxSearchControllerDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxSearchControllerDelegateProxy.swift; sourceTree = "<group>"; };
 		91F2F60F62335DD460C9899476CAE70D /* RxMutableBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxMutableBox.swift; path = RxSwift/RxMutableBox.swift; sourceTree = "<group>"; };
-		93A46565DADF7DC12A3E522AA7CCDC32 /* Chekout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Chekout.swift; sourceTree = "<group>"; };
+		93A46565DADF7DC12A3E522AA7CCDC32 /* Checkout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Checkout.swift; sourceTree = "<group>"; };
 		94A92C485AA0985F80C5B64EDCD66105 /* RxCocoa-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RxCocoa-Info.plist"; sourceTree = "<group>"; };
 		94EA69D2423194728E77438A02CC76EC /* ControlTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlTarget.swift; path = RxCocoa/Common/ControlTarget.swift; sourceTree = "<group>"; };
 		954AA19767E02A0D3DC38B8119671A49 /* TapApplePay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TapApplePay.swift; sourceTree = "<group>"; };
@@ -983,7 +983,7 @@
 		3AA1FAF739330A5B84FB49B9DCBD95FF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				93A46565DADF7DC12A3E522AA7CCDC32 /* Chekout.swift */,
+				93A46565DADF7DC12A3E522AA7CCDC32 /* Checkout.swift */,
 				954AA19767E02A0D3DC38B8119671A49 /* TapApplePay.swift */,
 				7E305DE358D91918837CA02F6D84F6C5 /* TapApplePayButton.swift */,
 			);
@@ -1763,7 +1763,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EA7908BCC9BA4F6677A932CA518E9DA /* ApplePayConfig.swift in Sources */,
-				4F0904CB803C1DDC70F240497F499BE6 /* Chekout.swift in Sources */,
+				4F0904CB803C1DDC70F240497F499BE6 /* Checkout.swift in Sources */,
 				129CD8942B02ABE1A327C89FE6C10350 /* CountryCode.swift in Sources */,
 				2E170B9C65C39EB4B58389F8FDBD5852 /* CurrencyCode.swift in Sources */,
 				FCDD134278214B87621034AB145C76EF /* OttuCheckout-dummy.m in Sources */,
